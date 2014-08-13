@@ -39,7 +39,7 @@ Or download the tarball or git clone the repository and then:
 ChangeLog
 =========
 
-0.5 (2014-08-12)
+0.5.1 (2014-08-12)
  * Fix servers (current 42 servers)
  * License
 
