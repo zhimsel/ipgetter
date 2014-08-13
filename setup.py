@@ -23,7 +23,7 @@ setup(
     license="WTFPL",
     classifiers=[
         'Environment :: Console',
-        'License :: WTFPL',
+        'License :: Public Domain',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
