@@ -1,20 +1,8 @@
 from distutils.core import setup
-
-
-def get_version(relpath):
-    """read version info from file without importing it"""
-    from os.path import dirname, join
-    for line in open(join(dirname(__file__), relpath)):
-        if '__version__' in line:
-            if '"' in line:
-                # __version__ = "0.1"
-                return line.split('"')[1]
-            elif "'" in line:
-                return line.split("'")[1]
             
 setup(
     name='ipgetter',
-    version=get_version('ipgetter.py'),
+    version='0.5.1',
     author='Fernando Giannasi <phoemur@gmail.com>',
     url='https://github.com/phoemur/ipgetter',
     download_url = 'https://github.com/phoemur/ipgetter/tarball/0.5.1',
