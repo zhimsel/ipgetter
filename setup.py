@@ -17,13 +17,13 @@ setup(
     version=get_version('ipgetter.py'),
     author='Fernando Giannasi <phoemur@gmail.com>',
     url='https://github.com/phoemur/ipgetter',
-    download_url = 'https://github.com/phoemur/ipgetter/tarball/0.4',
+    download_url = 'https://github.com/phoemur/ipgetter/tarball/0.5',
 
     description="Utility to fetch your external IP address",
-    license="Public Domain",
+    license="WTFPL",
     classifiers=[
         'Environment :: Console',
-        'License :: Public Domain',
+        'License :: WTFPL',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',

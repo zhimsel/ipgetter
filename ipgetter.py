@@ -22,6 +22,11 @@ API Usage
     IP's :
     8.8.8.8 = 47 ocurrencies
 
+
+Copyright © 2014 phoemur@gmail.com
+This work is free. You can redistribute it and/or modify it under the
+terms of the Do What The Fuck You Want To Public License, Version 2,
+as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 """
 
 import re
@@ -38,7 +43,7 @@ if PY3K:
 else:
     import urllib2 as urllib
 
-__version__ = "0.4"
+__version__ = "0.5"
 
 
 def timeout(seconds, error_message='Function call timed out'):
@@ -86,12 +91,10 @@ class IPgetter(object):
                             'http://ip.my-proxy.com/',
                             'http://websiteipaddress.com/WhatIsMyIp',
                             'http://getmyipaddress.org/',
-                            'http://showmyipaddress.com/',
                             'http://www.my-ip-address.net/',
                             'http://myexternalip.com/raw',
                             'http://www.canyouseeme.org/',
                             'http://www.trackip.net/',
-                            'http://myip.dnsdynamic.org/',
                             'http://icanhazip.com/',
                             'http://www.iplocation.net/',
                             'http://www.howtofindmyipaddress.com/',
