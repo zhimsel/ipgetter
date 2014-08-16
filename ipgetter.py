@@ -43,7 +43,7 @@ if PY3K:
 else:
     import urllib2 as urllib
 
-__version__ = "0.5.1"
+__version__ = "0.5.2"
 
 
 def timeout(seconds, error_message='Function call timed out'):
