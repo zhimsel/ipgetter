@@ -2,10 +2,10 @@ from distutils.core import setup
             
 setup(
     name='ipgetter',
-    version='0.5.2',
+    version='0.6',
     author='Fernando Giannasi <phoemur@gmail.com>',
     url='https://github.com/phoemur/ipgetter',
-    download_url = 'https://github.com/phoemur/ipgetter/tarball/0.5.2',
+    download_url = 'https://github.com/phoemur/ipgetter/tarball/0.6',
 
     description="Utility to fetch your external IP address",
     license="WTFPL",

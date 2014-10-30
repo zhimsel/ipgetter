@@ -39,6 +39,10 @@ Or download the tarball or git clone the repository and then:
 ChangeLog
 =========
 
+0.6 (2014-10-30)
+ * 45 servers
+ * Simpler is better
+
 0.5.2 (2014-08-12)
  * Fix servers (current 42 servers)
  * License

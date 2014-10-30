@@ -31,10 +31,8 @@ as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 
 import re
 import random
-import signal
 
 from sys import version_info
-from functools import wraps
 
 PY3K = version_info >= (3, 0)
 
@@ -43,31 +41,9 @@ if PY3K:
 else:
     import urllib2 as urllib
 
-__version__ = "0.5.2"
+__version__ = "0.6"
 
 
-def timeout(seconds, error_message='Function call timed out'):
-    '''
-    Decorator that provides timeout to a function
-    '''
-    def decorated(func):
-        def _handle_timeout(signum, frame):
-            raise TimeoutError(error_message)
-
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            signal.signal(signal.SIGALRM, _handle_timeout)
-            signal.alarm(seconds)
-            try:
-                result = func(*args, **kwargs)
-            finally:
-                signal.alarm(0)
-            return result
-        return wrapper
-    return decorated
-
-
-@timeout(120)
 def myip():
     return IPgetter().get_externalip()
 
