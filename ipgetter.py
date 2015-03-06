@@ -129,7 +129,7 @@ class IPgetter(object):
                               "Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20100101 Firefox/24.0")]
 
         try:
-            url = opener.open(server)
+            url = opener.open(server, timeout=2)    
             content = url.read()
 
             # Didn't want to import chardet. Prefered to stick to stdlib
