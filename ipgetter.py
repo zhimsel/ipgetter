@@ -109,10 +109,9 @@ class IPgetter(object):
         This function gets your IP from a random server
         '''
 
-        random.shuffle(self.server_list)
         myip = ''
-        for server in self.server_list:
-            myip = self.fetch(server)
+        for i in range(7):
+            myip = self.fetch(random.choice(self.server_list))
             if myip != '':
                 return myip
             else:
@@ -121,7 +120,7 @@ class IPgetter(object):
 
     def fetch(self, server):
         '''
-        This function gets your IP from a specific server
+        This function gets your IP from a specific server.
         '''
         url = None
         opener = urllib.build_opener()
@@ -129,7 +128,7 @@ class IPgetter(object):
                               "Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20100101 Firefox/24.0")]
 
         try:
-            url = opener.open(server, timeout=2)    
+            url = opener.open(server, timeout=2)
             content = url.read()
 
             # Didn't want to import chardet. Prefered to stick to stdlib
