@@ -79,7 +79,6 @@ class IPgetter(object):
                             'http://www.ip-adress.com/',
                             'http://checkmyip.com/',
                             'http://www.tracemyip.org/',
-                            'http://checkmyip.net/',
                             'http://www.lawrencegoetz.com/programs/ipinfo/',
                             'http://www.findmyip.co/',
                             'http://ip-lookup.net/',
