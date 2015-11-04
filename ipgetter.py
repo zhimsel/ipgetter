@@ -64,7 +64,6 @@ class IPgetter(object):
                             'http://checkip.dyndns.org/plain',
                             'http://ipogre.com/linux.php',
                             'http://whatismyipaddress.com/',
-                            'http://ip.my-proxy.com/',
                             'http://websiteipaddress.com/WhatIsMyIp',
                             'http://getmyipaddress.org/',
                             'http://www.my-ip-address.net/',
