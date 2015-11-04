@@ -98,7 +98,7 @@ class IPgetter(object):
                             'http://myexternalip.com/',
                             'http://www.ip-adress.eu/',
                             'http://www.infosniper.net/',
-                            'http://wtfismyip.com/',
+                            'https://wtfismyip.com/text',
                             'http://ipinfo.io/',
                             'http://httpbin.org/ip',
                             'http://ip.ajn.me']
