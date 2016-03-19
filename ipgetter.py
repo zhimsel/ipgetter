@@ -102,7 +102,8 @@ class IPgetter(object):
                             'http://ipinfo.io/',
                             'http://httpbin.org/ip',
                             'http://ip.ajn.me',
-                            'https://diagnostic.opendns.com/myip']
+                            'https://diagnostic.opendns.com/myip',
+                            'https://api.ipify.org']
 
     def get_externalip(self):
         '''
