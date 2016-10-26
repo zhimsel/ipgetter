@@ -104,6 +104,7 @@ class IPgetter(object):
                             'http://httpbin.org/ip',
                             'http://ip.ajn.me',
                             'https://diagnostic.opendns.com/myip',
+                            'http://checkip.amazonaws.com',
                             'https://api.ipify.org']
 
     def get_externalip(self):
