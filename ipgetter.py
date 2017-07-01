@@ -63,7 +63,6 @@ class IPgetter(object):
                             'http://echoip.com',
                             'http://ipecho.net/plain',
                             'http://checkip.dyndns.org/plain',
-                            'http://ipogre.com/linux.php',
                             'http://whatismyipaddress.com/',
                             'http://websiteipaddress.com/WhatIsMyIp',
                             'http://getmyipaddress.org/',
