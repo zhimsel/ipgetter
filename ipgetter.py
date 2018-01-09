@@ -31,6 +31,7 @@ as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 
 import re
 import random
+import ssl
 
 from sys import version_info
 
@@ -38,8 +39,10 @@ PY3K = version_info >= (3, 0)
 
 if PY3K:
     import urllib.request as urllib
+    import http.cookiejar as cjar
 else:
     import urllib2 as urllib
+    import cookielib as cjar
 
 __version__ = "0.6"
 
@@ -118,11 +121,14 @@ class IPgetter(object):
         This function gets your IP from a specific server.
         '''
         url = None
-        opener = urllib.build_opener()
+        cj = cjar.CookieJar()
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        opener = urllib.build_opener(urllib.HTTPCookieProcessor(cj), urllib.HTTPSHandler(context=ctx))
         opener.addheaders = [('User-agent', "Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0"),
                              ('Accept', "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"),
-                             ('Accept-Language', "en-US,en;q=0.5"),
-                             ('Accept-Encoding', "deflate")]
+                             ('Accept-Language', "en-US,en;q=0.5")]
 
         try:
             url = opener.open(server, timeout=4)
