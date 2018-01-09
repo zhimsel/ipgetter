@@ -89,7 +89,6 @@ class IPgetter(object):
                             'https://www.whatsmydns.net/whats-my-ip-address.html',
                             'https://www.privateinternetaccess.com/pages/whats-my-ip/',
                             'http://checkip.dyndns.com/',
-                            'http://myexternalip.com/',
                             'http://www.ip-adress.eu/',
                             'http://www.infosniper.net/',
                             'https://wtfismyip.com/text',
@@ -120,11 +119,13 @@ class IPgetter(object):
         '''
         url = None
         opener = urllib.build_opener()
-        opener.addheaders = [('User-agent',
-                              "Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20100101 Firefox/24.0")]
+        opener.addheaders = [('User-agent', "Mozilla/5.0 (X11; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0"),
+                             ('Accept', "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"),
+                             ('Accept-Language', "en-US,en;q=0.5"),
+                             ('Accept-Encoding', "deflate")]
 
         try:
-            url = opener.open(server, timeout=2)
+            url = opener.open(server, timeout=4)
             content = url.read()
 
             # Didn't want to import chardet. Prefered to stick to stdlib
