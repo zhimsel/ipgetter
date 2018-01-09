@@ -7,7 +7,7 @@ It picks your IP randomly from a serverlist to minimize request overhead on a si
 
 If you want to add or remove your server from the list contact me on github
 
-Copyright © 2014 phoemur@gmail.com
+Copyright Â© 2014 phoemur@gmail.com
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
 as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
@@ -38,6 +38,11 @@ Or download the tarball or git clone the repository and then:
 
 ChangeLog
 =========
+
+0.7 (2018-01-09)
+ * 40 servers
+ * SSL + cookie support
+ * bug fixes
 
 0.6 (2014-10-30)
  * 45 servers
