@@ -165,7 +165,7 @@ class IPgetter(object):
         print('\nNumber of servers: {}'.format(len(self.server_list)))
         print("IP's :")
         for ip, ocorrencia in zip(ips_set, map(lambda x: ips.count(x), ips_set)):
-            print('{0} = {1} ocurrenc{2}'.format(ip if len(ip) > 0 else 'broken server', ocorrencia, 'y' if ocorrencia == 1 else 'ies'))
+            print('{0} = {1} occurrenc{2}'.format(ip if len(ip) > 0 else 'broken server', ocorrencia, 'y' if ocorrencia == 1 else 'ies'))
         print('\n')
         print(resultdict)
 
