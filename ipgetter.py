@@ -62,7 +62,6 @@ class IPgetter(object):
 
     def __init__(self):
         self.server_list = ['http://ip.dnsexit.com',
-                            'http://ifconfig.me/ip',
                             'http://ipecho.net/plain',
                             'http://checkip.dyndns.org/plain',
                             'http://websiteipaddress.com/WhatIsMyIp',
@@ -80,7 +79,6 @@ class IPgetter(object):
                             'http://www.tracemyip.org/',
                             'http://www.lawrencegoetz.com/programs/ipinfo/',
                             'http://www.findmyip.co/',
-                            'http://ip-lookup.net/',
                             'http://www.mon-ip.com/en/my-ip/',
                             'http://ipgoat.com/',
                             'http://www.myipnumber.com/my-ip-address.asp',
@@ -95,7 +93,6 @@ class IPgetter(object):
                             'http://www.ip-adress.eu/',
                             'http://www.infosniper.net/',
                             'https://wtfismyip.com/text',
-                            'http://ipinfo.io/',
                             'http://httpbin.org/ip',
                             'https://diagnostic.opendns.com/myip',
                             'http://checkip.amazonaws.com',
